@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EXx-Ag-Xxn"/>
+                        <viewControllerLayoutGuide type="bottom" id="DcN-RR-YzD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-J3-ywE" userLabel="FirstView">
+                                <rect key="frame" x="66" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.95923477560000003" green="0.015704774099999999" blue="0.01307379113" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Kj0-QT-gOS"/>
+                                    <constraint firstAttribute="height" constant="50" id="YZN-rA-9hH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Id5-0V-Zbv" userLabel="SecondView">
+                                <rect key="frame" x="66" y="154" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.74407461929999996" green="0.48229791979999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6d3-cO-GCW"/>
+                                    <constraint firstAttribute="width" constant="150" id="t0z-Yl-aPD">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZY-Ob-b9y">
+                                <rect key="frame" x="16" y="398" width="256" height="50"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.84313725490000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XWl-01-DQH"/>
+                                </constraints>
+                                <state key="normal" title="Change Color"/>
+                                <connections>
+                                    <action selector="changeColorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uEI-6w-UoL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Id5-0V-Zbv" firstAttribute="top" secondItem="Yca-J3-ywE" secondAttribute="bottom" constant="84" id="4Ih-y4-fib">
+                                <variation key="heightClass=regular-widthClass=regular" constant="450"/>
+                            </constraint>
+                            <constraint firstItem="Yca-J3-ywE" firstAttribute="top" secondItem="EXx-Ag-Xxn" secondAttribute="bottom" id="Ggn-00-xF3"/>
+                            <constraint firstItem="Yca-J3-ywE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="RBx-11-VjK"/>
+                            <constraint firstItem="oZY-Ob-b9y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RqM-sU-YKM"/>
+                            <constraint firstItem="oZY-Ob-b9y" firstAttribute="top" secondItem="Id5-0V-Zbv" secondAttribute="bottom" constant="94" id="YUA-rL-iqm"/>
+                            <constraint firstItem="oZY-Ob-b9y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="mZC-3m-dmp"/>
+                            <constraint firstItem="Id5-0V-Zbv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="rpd-Xu-s7w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstView" destination="Yca-J3-ywE" id="ANG-ui-OOM"/>
+                        <outlet property="secondView" destination="Id5-0V-Zbv" id="7ed-0X-VvQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159.375" y="160.56338028169014"/>
+        </scene>
+    </scenes>
+</document>
